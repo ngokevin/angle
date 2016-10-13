@@ -17,8 +17,22 @@ angle <command>
 
 Run `angle --help` to get a list of all commands and options.
 
+#### `angle install <componentname> [htmlfilename]`
+
+Install a component from the registry to an HTML file. This will detect the
+A-Frame version from your HTML file and install the appropriate version of the
+component as a `<script>` tag.
+
+```
+angle install aframe-physics-system myaframescene-1.html
+```
+
 #### `angle initcomponent`
 
 Create a template in the working directory for publishing an A-Frame component.
 Formerly [A-Frame Component
 Boilerplate](https://github.com/ngokevin/aframe-component-boilerplate).
+
+```
+angle initcomponent
+```
