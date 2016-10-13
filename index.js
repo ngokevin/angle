@@ -6,7 +6,7 @@ var install = require('./lib/install');
 
 program
   .command('initcomponent')
-  .description('creates component template for publishing')
+  .description('create component template for publishing')
   .action(initcomponent);
 
 program
