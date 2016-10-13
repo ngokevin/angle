@@ -24,6 +24,7 @@ A-Frame version from your HTML file and install the appropriate version of the
 component as a `<script>` tag.
 
 ```
+angle install aframe-mountain-component
 angle install aframe-physics-system myaframescene-1.html
 ```
 
