@@ -1,0 +1,35 @@
+{
+  "name": "angle",
+  "version": "0.0.1",
+  "description": "A-Frame command-line tool for installing components and scaffolding templates. ",
+  "main": "index.js",
+  "bin": {
+    "angle": "./index.js"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngokevin/angle.git"
+  },
+  "keywords": [
+    "aframe",
+    "vr",
+    "aframevr",
+    "angle",
+    "cli",
+    "component",
+    "webvr",
+    "three.js"
+  ],
+  "author": "Kevin Ngo <me@ngokevin.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ngokevin/angle/issues"
+  },
+  "homepage": "https://github.com/ngokevin/angle#readme",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "inquirer": "^1.2.2",
+    "shelljs": "^0.7.4"
+  }
+}
