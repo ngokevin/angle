@@ -8,7 +8,7 @@ scaffolding templates.
 ### Installation
 
 ```
-npm install -g angle  # Working on getting this npm package name.
+npm install -g aframe-angle
 angle <command>
 ```
 
