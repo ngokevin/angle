@@ -9,7 +9,7 @@ and scaffolding templates.
 ### Installation
 
 ```
-npm install -g aframe-angle
+npm install -g angle
 angle <command>
 ```
 
