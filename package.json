@@ -1,7 +1,7 @@
 {
   "name": "angle",
-  "version": "0.0.1",
-  "description": "A-Frame command-line tool for installing components and scaffolding templates. ",
+  "version": "0.0.2",
+  "description": "General purpose command-line tool for A-Frame.",
   "main": "index.js",
   "bin": {
     "angle": "./index.js"
