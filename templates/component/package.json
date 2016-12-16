@@ -1,22 +1,21 @@
 {
-  "name": "aframe-example-component",
+  "name": "{{ npmName }}",
   "version": "1.0.0",
-  "description": "Example component for A-Frame.",
+  "description": "{{ prettyName }} component for A-Frame.",
   "main": "index.js",
   "scripts": {
     "build": "browserify examples/main.js -o examples/build.js",
     "dev": "budo examples/main.js:build.js --dir examples --port 8000 --live --open",
-    "dist": "webpack index.js dist/aframe-example-component.js && webpack -p index.js dist/aframe-example-component.min.js",
+    "dist": "webpack index.js dist/{{ npmName }}.js && webpack -p index.js dist/{{ npmName }}.min.js",
     "lint": "semistandard -v | snazzy",
     "prepublish": "npm run dist",
     "preghpages": "npm run build && shx rm -rf gh-pages && shx mkdir gh-pages && shx cp -r examples/* gh-pages",
     "ghpages": "npm run preghpages && ghpages -p gh-pages",
-    "start": "npm run dev",
-    "unboil": "node scripts/unboil.js"
+    "start": "npm run dev"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ngokevin/aframe-component-boilerplate.git"
+    "url": "git+https://github.com/{{ repo }}.git"
   },
   "keywords": [
     "aframe",
@@ -24,21 +23,20 @@
     "aframe-vr",
     "vr",
     "mozvr",
-    "webvr"
+    "webvr",
+    "{{ shortName }}"
   ],
-  "author": "Kevin Ngo <me@ngokevin.com>",
+  "author": "{{ author }}",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ngokevin/aframe-component-boilerplate/issues"
+    "url": "https://github.com/{{ repo }}/issues"
   },
-  "homepage": "https://github.com/ngokevin/aframe-component-boilerplate#readme",
+  "homepage": "https://github.com/{{ repo }}#readme",
   "devDependencies": {
-    "aframe": "^0.2.0",
+    "aframe": "^{{ aframeVersion }}",
     "browserify": "^13.0.0",
-    "browserify-css": "^0.9.1",
     "budo": "^8.2.2",
     "ghpages": "^0.0.8",
-    "inquirer": "^1.0.2",
     "randomcolor": "^0.4.4",
     "semistandard": "^8.0.0",
     "shelljs": "^0.7.0",

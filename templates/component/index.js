@@ -5,10 +5,10 @@ if (typeof AFRAME === 'undefined') {
 }
 
 /**
- * Example component for A-Frame.
+ * {{ prettyName }} component for A-Frame.
  */
-AFRAME.registerComponent('example', {
-  schema: { },
+AFRAME.registerComponent('{{ shortName }}', {
+  schema: {},
 
   /**
    * Set if component needs multiple instancing.
