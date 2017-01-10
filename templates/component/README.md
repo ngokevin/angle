@@ -18,7 +18,7 @@ Install and use by directly including the [browser files](dist):
 <head>
   <title>My A-Frame Scene</title>
   <script src="https://aframe.io/releases/{{ aframeVersion }}/aframe.min.js"></script>
-  <script src="https://rawgit.com/{{ repo }}/master/dist/{{ npmName }}.min.js"></script>
+  <script src="https://unpkg.com/{{ npmName }}/dist/{{ npmName }}.min.js"></script>
 </head>
 
 <body>

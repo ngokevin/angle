@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "{{ prettyName }} component for A-Frame.",
   "main": "index.js",
+  "cdn": "dist/{{ npmName }}.min.js",
   "scripts": {
     "build": "browserify examples/main.js -o examples/build.js",
     "dev": "budo examples/main.js:build.js --dir examples --port 8000 --live --open",
