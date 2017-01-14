@@ -1,15 +1,15 @@
 {
   "name": "{{ shortTitle }}",
-  "description": "{{ title }}",
+  "description": "{{ title }}.",
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "budo --live --verbose --port 3000 --open",
+    "start": "PORT=7000 live-server",
     "deploy": "ghpages"
   },
   "devDependencies": {
-    "budo": "^7.0.0",
-    "ghpages": "0.0.3"
+    "ghpages": "0.0.3",
+    "live-server": "^1.2.0"
   },
   "keywords": [
     "aframe",

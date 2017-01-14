@@ -14,11 +14,11 @@
       <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
       <a-sky color="#ECECEC"></a-sky>
 
-      {% if handControls %}
+      {%- if handControls %}
       <!--Tracked controls. -->
       <a-entity hand-controls="hand: left"></a-entity>
       <a-entity hand-controls="hand: right"></a-entity>
-      {% endif %}
+      {% endif -%}
     </a-scene>
   </body>
 </html>
