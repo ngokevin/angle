@@ -30,13 +30,31 @@ angle install aframe-physics-system myaframescene-1.html
 
 #### `angle initcomponent`
 
+[component]: https://aframe.io/docs/master/guides/writing-a-component.html
+
 Create a template in the working directory for an A-Frame component for
-publishing.  Formerly [A-Frame Component
-Boilerplate](https://github.com/ngokevin/aframe-component-boilerplate).
+publishing to the ecosystem. This command will ask several questions about your
+component to get things set up. See [how to write a component][component].
 
 ```
 angle initcomponent
 ```
+
+To develop the component:
+
+```
+npm install
+npm run dev
+```
+
+To publish the component to the ecosystem:
+
+```
+npm publish
+npm run ghpages
+```
+
+Then submit to the [A-Frame Registry](https://github.com/aframevr/aframe-registry).
 
 #### `angle initscene`
 
