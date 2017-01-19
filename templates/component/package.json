@@ -27,7 +27,7 @@
     "webvr",
     "{{ shortName }}"
   ],
-  "author": "{{ author }}",
+  "author": "{{ author|safe }}",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/{{ repo }}/issues"
