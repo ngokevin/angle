@@ -30,6 +30,17 @@ Install and use by directly including the [browser files](dist):
 </body>
 ```
 
+<!-- If component is accepted to the Registry, uncomment this. -->
+<!--
+Or with [angle](https://npmjs.com/package/angle/), you can install the proper
+version of the component straight into your HTML file, respective to your
+version of A-Frame:
+
+```sh
+angle install {{ npmName }}
+```
+-->
+
 #### npm
 
 Install via npm:
