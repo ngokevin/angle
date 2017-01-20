@@ -1,7 +1,7 @@
 {
   "name": "{{ npmName }}",
   "version": "1.0.0",
-  "description": "{{ prettyName }} component for A-Frame.",
+  "description": "{{ description }}",
   "main": "index.js",
   "cdn": "dist/{{ npmName }}.min.js",
   "scripts": {

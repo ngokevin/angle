@@ -1,6 +1,8 @@
 ## {{ npmName }}
 
-A {{ shortName }} component for [A-Frame](https://aframe.io).
+{{ description }}
+
+For [A-Frame](https://aframe.io).
 
 ### API
 
