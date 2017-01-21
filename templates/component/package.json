@@ -13,7 +13,9 @@
     "preghpages": "npm run build && shx rm -rf gh-pages && shx mkdir gh-pages && shx cp -r examples/* gh-pages",
     "ghpages": "npm run preghpages && ghpages -p gh-pages",
     "start": "npm run dev",
-    "test": "karma start ./tests/karma.conf.js"
+    "test": "karma start ./tests/karma.conf.js",
+    "test:firefox": "karma start ./tests/karma.conf.js --browsers Firefox",
+    "test:chrome": "karma start ./tests/karma.conf.js --browsers Chrome"
   },
   "repository": {
     "type": "git",
