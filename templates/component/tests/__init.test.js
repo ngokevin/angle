@@ -4,6 +4,7 @@
  * __init.test.js is run before every test case.
  */
 window.debug = true;
+var AScene = require('aframe').AScene
 
 navigator.getVRDisplays = function () {
   var resolvePromise = Promise.resolve();
@@ -15,8 +16,6 @@ navigator.getVRDisplays = function () {
   };
   return Promise.resolve([mockVRDisplay]);
 };
-
-var AScene = require('aframe').AScene
 
 setup(function () {
   this.sinon = sinon.sandbox.create();

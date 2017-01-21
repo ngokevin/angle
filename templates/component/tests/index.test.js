@@ -1,4 +1,6 @@
 /* global assert, setup, suite, test */
+require('aframe');
+require('../index.js');
 var entityFactory = require('./helpers').entityFactory;
 
 suite('{{ shortName }} component', function () {
