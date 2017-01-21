@@ -1,6 +1,6 @@
 {
   "name": "angle",
-  "version": "0.4.14",
+  "version": "0.4.15",
   "description": "General purpose command-line tool for A-Frame.",
   "main": "index.js",
   "bin": {
@@ -34,7 +34,7 @@
     "glob": "^7.1.1",
     "inquirer": "^1.2.2",
     "nunjucks": "^3.0.0",
-    "shelljs": "^0.7.4",
+    "shelljs": "^0.7.6",
     "slug": "^0.9.1",
     "title-case": "^2.1.0"
   }
