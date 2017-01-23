@@ -4,12 +4,15 @@ require('../index.js');
 var entityFactory = require('./helpers').entityFactory;
 
 suite('{{ shortName }} component', function () {
+  var el;
+
   setup(function (done) {
-    this.el = entityFactory();
-    this.el.setAttribute('{{ shortName }}', {});
-    this.el.addEventListener('loaded', function () {
+    el = entityFactory();
+    el.addEventListener('componentinitialized', function (evt) {
+      if (evt.detail.name !== {{ shortName }}) { return; }
       done();
     });
+    el.setAttribute('{{ shortName }}', {});
   });
 
   suite('foo property', function () {
