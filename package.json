@@ -1,6 +1,6 @@
 {
   "name": "angle",
-  "version": "0.4.18",
+  "version": "0.4.19",
   "description": "General purpose command-line tool for A-Frame.",
   "main": "index.js",
   "bin": {

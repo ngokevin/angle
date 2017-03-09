@@ -1,5 +1,8 @@
 ## {{ npmName }}
 
+[![Version](http://img.shields.io/npm/v/{{ npmName }}.svg?style=flat-square)](https://npmjs.org/package/{{ npmName }})
+[![License](http://img.shields.io/npm/l/{{ npmName }}.svg?style=flat-square)](https://npmjs.org/package/{{ npmName }})
+
 {{ description }}
 
 For [A-Frame](https://aframe.io).
