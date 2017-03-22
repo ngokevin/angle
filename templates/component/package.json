@@ -5,13 +5,11 @@
   "main": "index.js",
   "cdn": "dist/{{ npmName }}.min.js",
   "scripts": {
-    "build": "browserify examples/main.js -o examples/build.js",
-    "dev": "budo examples/main.js:build.js --dir examples --port 8000 --live --open",
+    "dev": "budo index.js:../../dist/{{ npmName }}.min.js --port 7000 --live --open",
     "dist": "webpack index.js dist/{{ npmName }}.js && webpack -p index.js dist/{{ npmName }}.min.js",
     "lint": "semistandard -v | snazzy",
     "prepublish": "npm run dist",
-    "preghpages": "npm run build && shx rm -rf gh-pages && shx mkdir gh-pages && shx cp -r examples/* gh-pages",
-    "ghpages": "npm run preghpages && ghpages -p gh-pages",
+    "ghpages": "ghpages",
     "start": "npm run dev",
     "test": "karma start ./tests/karma.conf.js",
     "test:firefox": "karma start ./tests/karma.conf.js --browsers Firefox",
@@ -37,7 +35,6 @@
   },
   "homepage": "https://github.com/{{ repo }}#readme",
   "devDependencies": {
-    "aframe": "^{{ aframeVersion }}",
     "browserify": "^13.0.0",
     "budo": "^8.2.2",
     "chai": "^3.4.1",

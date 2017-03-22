@@ -1,6 +1,6 @@
 {
   "name": "angle",
-  "version": "0.4.19",
+  "version": "0.5.0",
   "description": "General purpose command-line tool for A-Frame.",
   "main": "index.js",
   "bin": {
@@ -9,7 +9,7 @@
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ngokevin/angle.git"
+    "url": "git+https://github.com/aframevr/angle.git"
   },
   "keywords": [
     "aframe",
@@ -24,11 +24,11 @@
   "author": "Kevin Ngo <me@ngokevin.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ngokevin/angle/issues"
+    "url": "https://github.com/aframevr/angle/issues"
   },
-  "homepage": "https://github.com/ngokevin/angle#readme",
+  "homepage": "https://github.com/aframevr/angle#readme",
   "dependencies": {
-    "aframe-registry": "^0.4.1",
+    "aframe-registry": "^0.5.0",
     "cheerio": "^0.22.0",
     "commander": "^2.9.0",
     "glob": "^7.1.1",

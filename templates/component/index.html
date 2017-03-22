@@ -18,12 +18,42 @@
         display: block;
         padding: 15px 0;
       }
+      img {
+        max-width: 320px;
+      }
+      ul {
+        display: flex;
+        list-style: none;
+        flex-wrap: wrap;
+        padding: 5px 0 0;
+      }
+      ul li {
+        margin-right: 30px;
+        padding: 5px 0 30px;
+      }
+      ul a {
+        background-size: cover;
+        display: block;
+        padding: 0;
+        height: 320px;
+        width: 320px;
+      }
+      ul h3,
+      ul p {
+        max-width: 320px;
+      }
     </style>
   </head>
   <body>
     <h1>A-Frame {{ prettyName }} Component</h1>
-    <a href="basic/">Basic</a>
-    <p>This is a basic example.</p>
+
+    <ul>
+      <li>
+        <a href="examples/basic/" style="background-image: url(https://cloud.githubusercontent.com/assets/674727/24217331/ba3d5b86-0efc-11e7-8a7c-ac74b3f35a65.png)"></a>
+        <h3>Basic</h3>
+        <p>This is a basic example.</p>
+      </li>
+    </ul>
 
     <!-- GitHub Corner. -->
     <a href="https://github.com/{{ repo }}" class="github-corner">
