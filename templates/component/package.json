@@ -5,7 +5,7 @@
   "main": "index.js",
   "cdn": "dist/{{ npmName }}.min.js",
   "scripts": {
-    "dev": "budo index.js:../../dist/{{ npmName }}.min.js --port 7000 --live --open",
+    "dev": "budo index.js:dist/{{ npmName }}.min.js --port 7000 --live --open",
     "dist": "webpack index.js dist/{{ npmName }}.js && webpack -p index.js dist/{{ npmName }}.min.js",
     "lint": "semistandard -v | snazzy",
     "prepublish": "npm run dist",
