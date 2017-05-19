@@ -60,6 +60,10 @@
     "webpack": "^1.13.0"
   },
   "semistandard": {
+    "globals": [
+      "AFRAME",
+      "THREE"
+    ],
     "ignore": [
       "examples/build.js",
       "dist/**"
