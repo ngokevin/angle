@@ -30,7 +30,7 @@ angle install aframe-physics-system myaframescene-1.html
 
 #### `angle initcomponent`
 
-[component]: https://aframe.io/docs/master/guides/writing-a-component.html
+[component]: https://aframe.io/docs/master/introduction/writing-a-component.html
 
 Create a template in the working directory for an A-Frame component for
 publishing to the ecosystem. This command will ask several questions about your
