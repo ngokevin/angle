@@ -35,6 +35,7 @@
   },
   "homepage": "https://github.com/{{ repo }}#readme",
   "devDependencies": {
+    "aframe": "*",
     "browserify": "^13.0.0",
     "budo": "^8.2.2",
     "chai": "^3.4.1",
