@@ -1,6 +1,6 @@
 {
   "name": "angle",
-  "version": "0.5.4",
+  "version": "0.6.0",
   "description": "General purpose command-line tool for A-Frame.",
   "main": "index.js",
   "bin": {
@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/aframevr/angle#readme",
   "dependencies": {
-    "aframe-registry": "^0.5.1",
+    "aframe-registry": "^0.6.0",
     "cheerio": "^0.22.0",
     "commander": "^2.9.0",
     "glob": "^7.1.1",
