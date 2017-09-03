@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "{{ description }}",
   "main": "index.js",
-  "cdn": "dist/{{ npmName }}.min.js",
+  "unpkg": "dist/{{ npmName }}.min.js",
   "scripts": {
     "dev": "budo index.js:dist/{{ npmName }}.min.js --port 7000 --live --open",
     "dist": "webpack index.js dist/{{ npmName }}.js && webpack -p index.js dist/{{ npmName }}.min.js",
