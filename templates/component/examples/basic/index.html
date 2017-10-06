@@ -6,20 +6,11 @@
     <meta name="description" content="Basic example for {{ prettyName }} component."></meta>
     <script src="https://aframe.io/releases/{{ aframeVersion }}/aframe.min.js"></script>
     <script src="../../dist/{{ npmName }}.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.0.0/dist/aframe-environment-component.min.js"></script>
   </head>
   <body>
-    <a-scene>
-      <a-assets>
-        <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg" crossorigin="anonymous">
-        <img id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg" crossorigin="anonymous">
-      </a-assets>
-
+    <a-scene environment="preset: forest">
       <a-entity {{ shortName }}=""></a-entity>
-
-      <a-plane src="#groundTexture" rotation="-90 0 0" height="100" width="100"></a-plane>
-      <a-light type="ambient" color="#445451"></a-light>
-      <a-light type="point" intensity="2" position="2 4 4"></a-light>
-      <a-sky height="2048" radius="30" src="#skyTexture" theta-length="90" width="2048"></a-sky>
     </a-scene>
 
     <!-- GitHub Corner. -->
