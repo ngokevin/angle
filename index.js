@@ -4,13 +4,19 @@ var program = require('commander');
 var version = require('./package.json').version;
 
 var initcomponent = require('./lib/initcomponent');
+var initlocalcomponent = require('./lib/initlocalcomponent');
 var initscene = require('./lib/initscene');
 var install = require('./lib/install');
 
 program
   .command('initcomponent')
-  .description('start component from template')
+  .description('start component from template for publishing')
   .action(initcomponent);
+
+program
+  .command('initlocalcomponent <componentName>')
+  .description('start component from template for local application')
+  .action(initlocalcomponent);
 
 program
   .command('initscene')

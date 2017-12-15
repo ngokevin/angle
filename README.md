@@ -17,15 +17,15 @@ angle <command>
 
 Run `angle --help` to get a list of all commands and options.
 
-#### `angle install <componentname> [htmlfilename]`
+#### `angle initlocalcomponent <componentName>`
 
-Install a component from the registry to an HTML file. This will detect the
-A-Frame version from your HTML file and install the appropriate version of the
-component as a `<script>` tag.
+Quickly create a component JavaScript file from a simple template
+locally in the working directory. Meant to be used to
+create create a component for an application. Not meant
+for publishing or sharing.
 
 ```
-angle install aframe-mountain-component
-angle install aframe-physics-system myaframescene-1.html
+angle initlocalcomponent enemy-ship
 ```
 
 #### `angle initcomponent`
