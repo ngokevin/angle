@@ -6,10 +6,11 @@
   "unpkg": "dist/{{ npmName }}.min.js",
   "scripts": {
     "dev": "budo index.js:dist/{{ npmName }}.min.js --port 7000 --live --open",
-    "dist": "webpack index.js dist/{{ npmName }}.js && webpack -p index.js dist/{{ npmName }}.min.js",
+    "dist": "npm run rollup && uglifyjs dist/{{ npmName }}.js > dist/{{ npmName }}.min.js",
     "lint": "semistandard -v | snazzy",
     "prepublish": "npm run dist",
     "ghpages": "ghpages",
+    "rollup": "rollup index.js --output.format umd --name '{{ npmName }}' --output.file dist/{{ npmName }}.js",
     "start": "npm run dev",
     "test": "karma start ./tests/karma.conf.js",
     "test:firefox": "karma start ./tests/karma.conf.js --browsers Firefox",
@@ -58,7 +59,7 @@
     "sinon-chai": "^2.8.0",
     "shx": "^0.1.1",
     "snazzy": "^4.0.0",
-    "webpack": "^1.13.0"
+    "uglify-es": "github:mishoo/UglifyJS2#harmony"
   },
   "semistandard": {
     "globals": [
