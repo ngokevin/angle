@@ -25,7 +25,6 @@
     "aframe-component",
     "aframe-vr",
     "vr",
-    "mozvr",
     "webvr",
     "{{ shortName }}"
   ],
