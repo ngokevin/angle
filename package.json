@@ -28,6 +28,7 @@
   },
   "homepage": "https://github.com/aframevr/angle#readme",
   "dependencies": {
+    "aframe-registry": "^0.6.0",
     "cheerio": "^0.22.0",
     "commander": "^2.9.0",
     "glob": "^7.1.1",
