@@ -21,7 +21,7 @@ Run `angle --help` to get a list of all commands and options.
 
 Quickly create a component JavaScript file from a simple template
 locally in the working directory. Meant to be used to
-create create a component for an application. Not meant
+create a component for an application. Not meant
 for publishing or sharing.
 
 ```
