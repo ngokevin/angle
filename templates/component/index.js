@@ -47,5 +47,12 @@ AFRAME.registerComponent('{{ shortName }}', {
    * Called when entity resumes.
    * Use to continue or add any dynamic or background behavior such as events.
    */
-  play: function () { }
+  play: function () { },
+
+  /**
+   * Event handlers that automatically get attached or detached based on scene state.
+   */
+  events: {
+    // click: function (evt) { }
+  }
 });
