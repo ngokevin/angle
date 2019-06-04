@@ -44,7 +44,7 @@ To develop the component:
 
 ```
 npm install
-npm run dev
+npm start
 ```
 
 To publish the component to the ecosystem:
