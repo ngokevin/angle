@@ -1,5 +1,4 @@
 const path = require('path');
-const webpack = require('webpack');
 
 const PLUGINS = [];
 
@@ -11,7 +10,7 @@ module.exports = {
   mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
   output: {
     globalObject: 'this',
-    path: __dirname + '/dist',
+    path: __dirname + '/dist', // eslint-disable-line no-path-concat
     filename: process.env.NODE_ENV === 'production' ? '{{ npmName }}.min.js' : '{{ npmName }}.js',
     libraryTarget: 'umd'
   },
